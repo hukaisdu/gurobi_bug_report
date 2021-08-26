@@ -1,0 +1,101 @@
+set mipFocus to 1:
+Academic license - for non-commercial use only - expires 2022-06-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 2 threads
+Optimize a model with 8254 rows, 5064 columns and 20194 nonzeros
+Model fingerprint: 0x2d365e71
+Variable types: 0 continuous, 5064 integer (5064 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 7646 rows and 4627 columns
+Presolve time: 0.02s
+Presolved: 608 rows, 437 columns, 1600 nonzeros
+Variable types: 0 continuous, 437 integer (437 binary)
+
+Root relaxation: objective 1.423333e+01, 485 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   14.23333    0   99          -   14.23333      -     -    0s
+     0     0   12.00000    0   67          -   12.00000      -     -    0s
+*    0     0               0      11.0000000   11.00000  0.00%     -    0s
+
+Optimal solution found at node 0 - now completing solution pool...
+
+    Nodes    |    Current Node    |      Pool Obj. Bounds     |     Work
+             |                    |   Worst                   |
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0          -    0               -   11.00000      -     -    0s
+     0     0          -    0               -   11.00000      -     -    0s
+     0     0   11.00000    0   92          -   11.00000      -     -    0s
+     0     0          -    0               -   11.00000      -     -    0s
+     0     0          -    0               -   11.00000      -     -    0s
+     0     0          -    0               -   11.00000      -     -    0s
+     0     0          -    0               -   11.00000      -     -    0s
+     0     0          -    0               -   11.00000      -     -    0s
+     0     2          -    0               -   11.00000      -     -    0s
+
+Explored 1331 nodes (1063 simplex iterations) in 0.10 seconds
+Thread count was 2 (of 64 available processors)
+
+Solution count 648: 11 11 11 ... 7
+No other solutions better than -1e+100
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+****************************************************
+set mipFocus to 3:
+Academic license - for non-commercial use only - expires 2022-06-29
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 32 physical cores, 64 logical processors, using up to 2 threads
+Optimize a model with 8254 rows, 5064 columns and 20194 nonzeros
+Model fingerprint: 0x2d365e71
+Variable types: 0 continuous, 5064 integer (5064 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 7646 rows and 4627 columns
+Presolve time: 0.02s
+Presolved: 608 rows, 437 columns, 1600 nonzeros
+Variable types: 0 continuous, 437 integer (437 binary)
+Presolved: 608 rows, 437 columns, 1600 nonzeros
+
+
+Root relaxation: objective 1.423333e+01, 473 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   14.23333    0   98          -   14.23333      -     -    0s
+H    0     0                      11.0000000   14.23333  29.4%     -    0s
+     0     0          -    0        11.00000   11.00000  0.00%     -    0s
+
+Optimal solution found at node 0 - now completing solution pool...
+
+    Nodes    |    Current Node    |      Pool Obj. Bounds     |     Work
+             |                    |   Worst                   |
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0          -    0               -   11.00000      -     -    0s
+     0     0          -    0               -   11.00000      -     -    0s
+     0     0   11.00000    0   62          -   11.00000      -     -    0s
+
+Cutting planes:
+  Gomory: 7
+  Zero half: 38
+
+Explored 1 nodes (971 simplex iterations) in 0.09 seconds
+Thread count was 2 (of 64 available processors)
+
+Solution count 3: 11 11 11 
+No other solutions better than -1e+100
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
